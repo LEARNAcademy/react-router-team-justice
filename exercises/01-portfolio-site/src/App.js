@@ -23,9 +23,10 @@ class App extends Component {
     return (
       <Router>
         <div >
+          <nav className="sticky-nav">
           <Navbar >
             <Navbar.Toggle />
-            <Navbar.Collapse >
+            <Navbar.Collapse>
               <Nav >
                 <NavItem>
                   <Link to="/">Home</Link>
@@ -45,6 +46,7 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          </nav>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
